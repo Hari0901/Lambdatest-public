@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Parallel Test">
+  <test thread-count="4" parallel="methods" name="Lambda test task">
+    <classes>
+      <class name="test_scenarios.TestScenarioThree"/>
+      <class name="test_scenarios.TestScenarioTwo"/>
+      <class name="test_scenarios.TestScenarioOne"/>
+    </classes>
+  </test> <!-- Lambda test task -->
+</suite> <!-- Parallel Test -->

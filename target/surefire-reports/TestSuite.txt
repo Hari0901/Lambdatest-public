@@ -1,0 +1,71 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 109.345 s <<< FAILURE! - in TestSuite
+test_scenarios.TestScenarioThree.submitForm[Firefox, Windows 11](6)  Time elapsed: 26.31 s  <<< FAILURE!
+org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: 
+org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 8412f9a9-1c24-4ca6-8321-e3329b4e919f, maybe session has quit already or timed out.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8412f9a9-1c24-4ca6-8321-e3329b4e919f, findElement {using=link text, value=Input Form Submit}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5056, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8412f9a9-1c24-4ca6-8321-e3329b4e919f
+	at test_scenarios.TestScenarioThree.submitForm(TestScenarioThree.java:26)
+
+test_scenarios.TestScenarioTwo.dragDrop[Firefox, Windows 11](6)  Time elapsed: 7.319 s  <<< FAILURE!
+org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: 
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Firefox Windows 11, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:debuggerAddress: true, moz:firefoxOptions: {}, platformName: Windows 11}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Firefox Windows 11, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:debuggerAddress: true, moz:firefoxOptions: {}, platformName: Windows 11}}]
+Capabilities {}
+	at test_scenarios.TestScenarioTwo.dragDrop(TestScenarioTwo.java:21)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+	at test_scenarios.TestScenarioTwo.dragDrop(TestScenarioTwo.java:21)
+Caused by: java.lang.InterruptedException
+	at test_scenarios.TestScenarioTwo.dragDrop(TestScenarioTwo.java:21)
+
+test_scenarios.TestScenarioThree.submitForm[Internet Explorer, Windows 10](8)  Time elapsed: 0.005 s  <<< FAILURE!
+org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: 
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}
+	at test_scenarios.TestScenarioThree.submitForm(TestScenarioThree.java:22)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+	at test_scenarios.TestScenarioThree.submitForm(TestScenarioThree.java:22)
+Caused by: java.lang.InterruptedException
+	at test_scenarios.TestScenarioThree.submitForm(TestScenarioThree.java:22)
+
+test_scenarios.TestScenarioOne.getMessage[Internet Explorer, Windows 10](8)  Time elapsed: 0.008 s  <<< FAILURE!
+org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: 
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}
+	at test_scenarios.TestScenarioOne.getMessage(TestScenarioOne.java:20)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+	at test_scenarios.TestScenarioOne.getMessage(TestScenarioOne.java:20)
+Caused by: java.lang.InterruptedException
+	at test_scenarios.TestScenarioOne.getMessage(TestScenarioOne.java:20)
+
+test_scenarios.TestScenarioTwo.dragDrop[Internet Explorer, Windows 10](8)  Time elapsed: 28.826 s  <<< FAILURE!
+org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: 
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}
+	at test_scenarios.TestScenarioTwo.dragDrop(TestScenarioTwo.java:21)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+	at test_scenarios.TestScenarioTwo.dragDrop(TestScenarioTwo.java:21)
+Caused by: java.lang.InterruptedException
+	at test_scenarios.TestScenarioTwo.dragDrop(TestScenarioTwo.java:21)
+

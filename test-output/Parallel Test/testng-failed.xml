@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Failed suite [Parallel Test]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Lambda test task(failed)">
+    <classes>
+      <class name="test_scenarios.TestScenarioOne">
+        <methods>
+          <include name="getMessage" invocation-numbers="2 3"/>
+        </methods>
+      </class> <!-- test_scenarios.TestScenarioOne -->
+      <class name="test_scenarios.TestScenarioThree">
+        <methods>
+          <include name="submitForm" invocation-numbers="0 2 3"/>
+        </methods>
+      </class> <!-- test_scenarios.TestScenarioThree -->
+      <class name="test_scenarios.TestScenarioTwo">
+        <methods>
+          <include name="dragDrop" invocation-numbers="2 3"/>
+        </methods>
+      </class> <!-- test_scenarios.TestScenarioTwo -->
+    </classes>
+  </test> <!-- Lambda test task(failed) -->
+</suite> <!-- Failed suite [Parallel Test] -->

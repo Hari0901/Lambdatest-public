@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-13T17:02:17 IST" name="Parallel Test" finished-at="2025-02-13T17:04:06 IST" duration-ms="108876">
+    <groups>
+    </groups>
+    <test started-at="2025-02-13T17:02:17 IST" name="Lambda test task" finished-at="2025-02-13T17:04:06 IST" duration-ms="108876">
+      <class name="test_scenarios.TestScenarioTwo">
+        <test-method signature="dragDrop(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioTwo@ec756bd]" started-at="2025-02-13T17:02:17 IST" name="dragDrop" data-provider="browserOsData" finished-at="2025-02-13T17:02:46 IST" duration-ms="28829" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDrop -->
+        <test-method signature="dragDrop(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioTwo@ec756bd]" started-at="2025-02-13T17:02:46 IST" name="dragDrop" data-provider="browserOsData" finished-at="2025-02-13T17:03:02 IST" duration-ms="16119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Microsoft Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDrop -->
+        <test-method signature="dragDrop(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioTwo@ec756bd]" started-at="2025-02-13T17:03:02 IST" name="dragDrop" data-provider="browserOsData" finished-at="2025-02-13T17:03:37 IST" duration-ms="35071" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException">
+            <message>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Firefox Windows 11, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:debuggerAddress: true, moz:firefoxOptions: {}, platformName: Windows 11}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Firefox Windows 11, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:debuggerAddress: true, moz:firefoxOptions: {}, platformName: Windows 11}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Firefox Windows 11, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:debuggerAddress: true, moz:firefoxOptions: {}, platformName: Windows 11}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Firefox Windows 11, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:debuggerAddress: true, moz:firefoxOptions: {}, platformName: Windows 11}}]
+Capabilities {}
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:53)
+at org.testng.internal.InvokeMethodRunnable.call(InvokeMethodRunnable.java:71)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:35)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:314)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:603)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Firefox Windows 11, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:debuggerAddress: true, moz:firefoxOptions: {}, platformName: Windows 11}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Firefox Windows 11, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:debuggerAddress: true, moz:firefoxOptions: {}, platformName: Windows 11}}]
+Capabilities {}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:587)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at test_scenarios.DriverConfiguration.setUp(DriverConfiguration.java:80)
+at test_scenarios.TestScenarioTwo.dragDrop(TestScenarioTwo.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+... 14 more
+Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:63)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:120)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+... 23 more
+Caused by: java.lang.InterruptedException
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDrop -->
+        <test-method signature="dragDrop(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioTwo@ec756bd]" started-at="2025-02-13T17:03:37 IST" name="dragDrop" data-provider="browserOsData" finished-at="2025-02-13T17:04:06 IST" duration-ms="28824" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Internet Explorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException">
+            <message>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:53)
+at org.testng.internal.InvokeMethodRunnable.call(InvokeMethodRunnable.java:71)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:35)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:314)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:603)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:587)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at test_scenarios.DriverConfiguration.setUp(DriverConfiguration.java:99)
+at test_scenarios.TestScenarioTwo.dragDrop(TestScenarioTwo.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+... 14 more
+Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:63)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:120)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+... 23 more
+Caused by: java.lang.InterruptedException
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragDrop -->
+      </class> <!-- test_scenarios.TestScenarioTwo -->
+      <class name="test_scenarios.TestScenarioOne">
+        <test-method signature="getMessage(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioOne@3c72f59f]" started-at="2025-02-13T17:02:17 IST" name="getMessage" data-provider="browserOsData" finished-at="2025-02-13T17:02:39 IST" duration-ms="21986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMessage -->
+        <test-method signature="getMessage(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioOne@3c72f59f]" started-at="2025-02-13T17:02:39 IST" name="getMessage" data-provider="browserOsData" finished-at="2025-02-13T17:02:53 IST" duration-ms="14124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Microsoft Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMessage -->
+        <test-method signature="getMessage(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioOne@3c72f59f]" started-at="2025-02-13T17:02:53 IST" name="getMessage" data-provider="browserOsData" finished-at="2025-02-13T17:03:30 IST" duration-ms="36588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMessage -->
+        <test-method signature="getMessage(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioOne@3c72f59f]" started-at="2025-02-13T17:03:30 IST" name="getMessage" data-provider="browserOsData" finished-at="2025-02-13T17:03:37 IST" duration-ms="7318" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Internet Explorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException">
+            <message>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:53)
+at org.testng.internal.InvokeMethodRunnable.call(InvokeMethodRunnable.java:71)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:35)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:314)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:603)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:587)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at test_scenarios.DriverConfiguration.setUp(DriverConfiguration.java:99)
+at test_scenarios.TestScenarioOne.getMessage(TestScenarioOne.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+... 14 more
+Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:63)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:120)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+... 23 more
+Caused by: java.lang.InterruptedException
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMessage -->
+      </class> <!-- test_scenarios.TestScenarioOne -->
+      <class name="test_scenarios.TestScenarioThree">
+        <test-method signature="submitForm(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioThree@358ee631]" started-at="2025-02-13T17:02:17 IST" name="submitForm" data-provider="browserOsData" finished-at="2025-02-13T17:02:49 IST" duration-ms="31400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForm -->
+        <test-method signature="submitForm(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioThree@358ee631]" started-at="2025-02-13T17:02:49 IST" name="submitForm" data-provider="browserOsData" finished-at="2025-02-13T17:03:00 IST" duration-ms="11690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Microsoft Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForm -->
+        <test-method signature="submitForm(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioThree@358ee631]" started-at="2025-02-13T17:03:00 IST" name="submitForm" data-provider="browserOsData" finished-at="2025-02-13T17:03:28 IST" duration-ms="28161" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException">
+            <message>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 8412f9a9-1c24-4ca6-8321-e3329b4e919f, maybe session has quit already or timed out.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8412f9a9-1c24-4ca6-8321-e3329b4e919f, findElement {using=link text, value=Input Form Submit}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5056, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8412f9a9-1c24-4ca6-8321-e3329b4e919f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 8412f9a9-1c24-4ca6-8321-e3329b4e919f, maybe session has quit already or timed out.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8412f9a9-1c24-4ca6-8321-e3329b4e919f, findElement {using=link text, value=Input Form Submit}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5056, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8412f9a9-1c24-4ca6-8321-e3329b4e919f
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:53)
+at org.testng.internal.InvokeMethodRunnable.call(InvokeMethodRunnable.java:71)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:35)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:314)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:603)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 8412f9a9-1c24-4ca6-8321-e3329b4e919f, maybe session has quit already or timed out.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8412f9a9-1c24-4ca6-8321-e3329b4e919f, findElement {using=link text, value=Input Form Submit}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5056, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8412f9a9-1c24-4ca6-8321-e3329b4e919f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at test_scenarios.TestScenarioThree.submitForm(TestScenarioThree.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+... 14 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForm -->
+        <test-method signature="submitForm(java.lang.String, java.lang.String)[pri:0, instance:test_scenarios.TestScenarioThree@358ee631]" started-at="2025-02-13T17:03:29 IST" name="submitForm" data-provider="browserOsData" finished-at="2025-02-13T17:03:37 IST" duration-ms="8760" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Internet Explorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException">
+            <message>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:53)
+at org.testng.internal.InvokeMethodRunnable.call(InvokeMethodRunnable.java:71)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:35)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:314)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:603)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HARI', ip: '192.168.0.101', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}], desiredCapabilities=Capabilities {LT:Options: {accessKey: lnZKxgahvOQWMxQNl73Uxp4ODhJ..., build: Selenium java 101 Test 3, console: true, name: Internet Explorer Windows 10, network: true, project: Test project, selenium_version: 4.0.0, timezone: Kolkata, username: hariharanbas754, video: true, visual: true, w3c: true}, browserName: internet explorer, browserVersion: 11.0, platformName: Windows 10, se:ieOptions: {}}}]
+Capabilities {}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:587)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at test_scenarios.DriverConfiguration.setUp(DriverConfiguration.java:99)
+at test_scenarios.TestScenarioThree.submitForm(TestScenarioThree.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+... 14 more
+Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:63)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:120)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+... 23 more
+Caused by: java.lang.InterruptedException
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitForm -->
+      </class> <!-- test_scenarios.TestScenarioThree -->
+    </test> <!-- Lambda test task -->
+  </suite> <!-- Parallel Test -->
+</testng-results>
