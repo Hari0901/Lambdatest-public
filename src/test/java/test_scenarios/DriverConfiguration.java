@@ -19,7 +19,7 @@ import org.testng.annotations.AfterTest;
 public class DriverConfiguration extends DataProviderClass{
 
 	public static WebDriver driver;
-	
+	//driver setup
 	public WebDriver setUp(String browser,String os) throws MalformedURLException {
 		if (browser.equals("Chrome") && os.equals("Windows 10")) {
 			ChromeOptions options = new ChromeOptions();
